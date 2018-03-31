@@ -28,7 +28,7 @@ namespace HomeTask3
             //count number of words in each sentence
             for (int i = 0; i < sentences.Length; i++)
             {
-                string[] words = sentences[i].Split(new char[] { ' ' });
+                string[] words = sentences[i].Trim().Split(new char[] { ' ' });
 
                 intArray[i] = words.Length;
             }
