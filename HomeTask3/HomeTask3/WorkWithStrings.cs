@@ -10,12 +10,14 @@ namespace HomeTask3
 
         public WorkWithStrings()
         {
-            text = "Here comes a traveller.Let us see who can strip him of his cloak?Said the Sun.";
+            //text = "Here comes a traveller.Let us see who can strip him of his cloak?Said the Sun.";
+            Console.WriteLine("Write the text\n");
+            text = Console.ReadLine();
         }
 
         public void LongestSentence()
         {
-            Console.WriteLine("***Fun with sentences***\n");
+            Console.WriteLine("\n***Fun with sentences***\n");
 
             //split text to sentences
             string[] sentences = text.Split(new char[] { '.', '!', '?' });
