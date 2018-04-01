@@ -31,7 +31,18 @@ namespace HomeTask3
 
             //sort elements and get first - largest!
             longestSentence = intArray.OrderByDescending(x => x).First();
-            Console.WriteLine($"The longest sentence in the text has {longestSentence} words\a");
+            Console.WriteLine($"\n The longest sentence in the text has {longestSentence} words\a");
+        }
+
+        public void WorkWithStringFormat()
+        {
+            var year = 2018;
+            string str = $"\n We live in {year}";
+            Console.WriteLine(str);
+
+            Person person = new Person("Andrey", "Proskura") { Age = 29 };
+            string strInterpolated = $"\n Hello!  My name is {person.FirstName} {person.LastName} and I am { person.Age} years old.";
+            Console.WriteLine(strInterpolated);
         }
     }
 }

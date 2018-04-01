@@ -13,6 +13,10 @@ namespace HomeTask3
             WorkWithStrings workWithStrings = new WorkWithStrings();
             workWithStrings.LongestSentence();
 
+            Console.WriteLine("========================================");
+
+            workWithStrings.WorkWithStringFormat();
+
             Console.ReadLine();
         }
     }
